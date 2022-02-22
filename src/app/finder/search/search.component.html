@@ -1,0 +1,9 @@
+<div id="search" class="container-search">
+  <div class="input">
+    <img src="../../../assets/svg/search.svg" alt="Search">
+    <input type="text" placeholder="Search Github username..." (keyup)="typing($event)">
+  </div>
+  <button type="button" [disabled]="!searchValue" (click)="search()">
+    Search
+  </button>
+</div>
