@@ -2039,7 +2039,7 @@ boolbase@^1.0.0:
 
 bootstrap@4.0.0:
   version "4.0.0"
-  resolved "https://pauloszcz.pkgs.visualstudio.com/krooze.www/_packaging/kroozenpm/npm/registry/bootstrap/-/bootstrap-4.0.0.tgz#ceb03842c145fcc1b9b4e15da2a05656ba68469a"
+  resolved "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz#ceb03842c145fcc1b9b4e15da2a05656ba68469a"
   integrity sha1-zrA4QsFF/MG5tOFdoqBWVrpoRpo=
 
 brace-expansion@^1.1.7:
