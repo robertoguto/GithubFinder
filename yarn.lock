@@ -2039,8 +2039,8 @@ boolbase@^1.0.0:
 
 bootstrap@4.0.0:
   version "4.0.0"
-  resolved "https://pauloszcz.pkgs.visualstudio.com/krooze.www/_packaging/kroozenpm/npm/registry/bootstrap/-/bootstrap-4.0.0.tgz#ceb03842c145fcc1b9b4e15da2a05656ba68469a"
-  integrity sha1-zrA4QsFF/MG5tOFdoqBWVrpoRpo=
+  resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-4.0.0.tgz#ceb03842c145fcc1b9b4e15da2a05656ba68469a"
+  integrity sha512-gulJE5dGFo6Q61V/whS6VM4WIyrlydXfCgkE+Gxe5hjrJ8rXLLZlALq7zq2RPhOc45PSwQpJkrTnc2KgD6cvmA==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
