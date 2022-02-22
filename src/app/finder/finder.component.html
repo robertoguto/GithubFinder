@@ -1,1 +1,15 @@
-<p>finder works!</p>
+<div class="background-container" id="{{ theme ? 'dark' : 'light' }}">
+  <div class="container">
+    <div class="container-header">
+      <h1>GithubFinder</h1>
+      <button type="button" class="button-change" (click)="theme = !theme">
+        <span *ngIf="theme">
+          Light <img src="../../assets/svg/sun.svg" alt="Theme Light">
+        </span>
+        <span *ngIf="!theme">
+          Dark <img src="../../assets/svg/moon.svg" alt="Theme Dark">
+        </span>
+      </button>
+    </div>
+  </div>
+</div>

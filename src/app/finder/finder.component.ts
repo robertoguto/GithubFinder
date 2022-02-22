@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./finder.component.scss']
 })
 export class FinderComponent implements OnInit {
+  theme: boolean = true;
 
   constructor() { }
 
