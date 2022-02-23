@@ -87,14 +87,20 @@
       padding: 10px;
       border-radius: 10px;
 
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 768px) {
         position: relative;
-        right: 100px;
+        right: 170px;
+        margin-top: 50px;
+      }
+
+      @media screen and (max-width: 576px) {
         margin-top: 20px;
+        right: 100px;
       }
 
       .profile {
         text-align: center;
+
         span {
           display: block;
           margin-bottom: 10px;
@@ -104,7 +110,7 @@
         strong {
           font-size: 25px;
 
-          @media screen and (max-width: 576px) {
+          @media screen and (max-width: 768px) {
             font-size: 16px;
           }
         }
@@ -114,10 +120,14 @@
     &__infos {
       margin-top: 30px;
 
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 768px) {
         position: relative;
-        right: 100px;
+        right: 170px;
         margin-top: 20px;
+      }
+
+      @media screen and (max-width: 576px) {
+        right: 100px;
       }
 
       .info {
@@ -126,6 +136,12 @@
 
         img {
           margin-right: 10px;
+        }
+
+        span {
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .not-available {

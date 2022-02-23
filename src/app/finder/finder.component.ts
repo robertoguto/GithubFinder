@@ -26,7 +26,6 @@ export class FinderComponent implements OnInit {
     this.finderService.getUser(user).subscribe({
       next: (user: User) => {
         this.user = user;
-        console.log(this.user);
       }
     });
   }

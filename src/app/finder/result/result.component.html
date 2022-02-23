@@ -25,21 +25,21 @@
     </div>
     <div class="content__infos">
       <div class="row">
-        <div class="info col-12 col-md-6">
+        <div class="info col-12 col-lg-6">
           <img src="../../../assets/svg/map-pin.svg" alt="Location">
-          <span class="{{ user?.location ? '' : 'not-available' }}">{{ user?.location || 'Not available' }}</span>
+          <span [title]="user?.location || 'Not available'" class="{{ user?.location ? '' : 'not-available' }}">{{ user?.location || 'Not available' }}</span>
         </div>
-        <div class="info col-12 col-md-6 mt-3 mt-md-0">
+        <div class="info col-12 col-lg-6 mt-3 mt-lg-0">
           <img src="../../../assets/svg/twitter.svg" alt="Twitter">
-          <span class="{{ user?.twitter_username ? '' : 'not-available' }}">{{ user?.twitter_username || 'Not available' }}</span>
+          <span [title]="user?.twitter_username || 'Not available'" class="{{ user?.twitter_username ? '' : 'not-available' }}">{{ user?.twitter_username || 'Not available' }}</span>
         </div>
-        <div class="info col-12 col-md-6 mt-3">
+        <div class="info col-12 col-lg-6 mt-3">
           <img src="../../../assets/svg/link.svg" alt="Link">
-          <span class="{{ user?.blog ? '' : 'not-available' }}">{{ user?.blog || 'Not available' }}</span>
+          <span [title]="user?.blog || 'Not available'" class="{{ user?.blog ? '' : 'not-available' }}">{{ user?.blog || 'Not available' }}</span>
         </div>
-        <div class="info col-12 col-md-6 mt-3">
+        <div class="info col-12 col-lg-6 mt-3">
           <img src="../../../assets/svg/icon-company.svg" alt="Company">
-          <span class="{{ user?.company ? '' : 'not-available' }}">{{ user?.company || 'Not available' }}</span>
+          <span [title]="user?.company || 'Not available'" class="{{ user?.company ? '' : 'not-available' }}">{{ user?.company || 'Not available' }}</span>
         </div>
       </div>
     </div>
