@@ -1,45 +1,45 @@
 <div id="result" class="container-result">
-  <img class="profile-img" src="https://avatars.githubusercontent.com/u/33256402?v=4" alt="User Photo">
+  <img class="profile-img" [src]="user?.avatar_url" alt="User Photo">
   <div class="content">
     <div class="content__header">
       <div class="principal">
-        <h2>The Octocat</h2>
-        <a href="github.com/octocat" target="_blank">@octocat</a>
+        <h2>{{ user?.name }}</h2>
+        <a href="http://github.com/{{ user?.login }}" target="_blank">@{{ user?.login }}</a>
       </div>
-      <span>Joined 25 Jan 2011</span>
+      <span>Joined {{ user?.created_at | date }}</span>
     </div>
-    <p class="content__bio">This profile has no bio</p>
+    <p class="content__bio">{{ user?.bio }}</p>
     <div class="content__profiles">
       <div class="profile">
         <span>Repos</span>
-        <strong>8</strong>
+        <strong>{{ user?.public_repos }}</strong>
       </div>
       <div class="profile">
         <span>Followers</span>
-        <strong>4988</strong>
+        <strong>{{ user?.followers }}</strong>
       </div>
       <div class="profile">
         <span>Following</span>
-        <strong>9</strong>
+        <strong>{{ user?.following }}</strong>
       </div>
     </div>
     <div class="content__infos">
       <div class="row">
         <div class="info col-12 col-md-6">
           <img src="../../../assets/svg/map-pin.svg" alt="Location">
-          <span>San Francisco</span>
+          <span class="{{ user?.location ? '' : 'not-available' }}">{{ user?.location || 'Not available' }}</span>
         </div>
         <div class="info col-12 col-md-6 mt-3 mt-md-0">
           <img src="../../../assets/svg/twitter.svg" alt="Twitter">
-          <span class="{{ false ? '' : 'not-available' }}">Not available</span>
+          <span class="{{ user?.twitter_username ? '' : 'not-available' }}">{{ user?.twitter_username || 'Not available' }}</span>
         </div>
         <div class="info col-12 col-md-6 mt-3">
           <img src="../../../assets/svg/link.svg" alt="Link">
-          <span>https://github.blog</span>
+          <span class="{{ user?.blog ? '' : 'not-available' }}">{{ user?.blog || 'Not available' }}</span>
         </div>
         <div class="info col-12 col-md-6 mt-3">
           <img src="../../../assets/svg/icon-company.svg" alt="Company">
-          <span>@github</span>
+          <span class="{{ user?.company ? '' : 'not-available' }}">{{ user?.company || 'Not available' }}</span>
         </div>
       </div>
     </div>
