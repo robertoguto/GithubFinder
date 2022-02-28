@@ -29,7 +29,7 @@
 	🔗 Link
 </h2>
 
-- <h3 style="margin-top: 20px;"> Demo - <a href="https://github-finder-beige-seven.vercel.app">GithubFinder</a> </h3>
+- <h3 style="margin-top: 20px;"> Demo - <a href="https://github-finder-robertoguto.vercel.app">GithubFinder</a> </h3>
 
 <h2 style="margin-top: 30px;"> 
 	🚀 How to run
